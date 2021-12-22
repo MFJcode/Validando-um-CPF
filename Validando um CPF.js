@@ -41,3 +41,9 @@ ValidaCPF.prototype.isSequencia = function() {
     return sequencia === this.cpfLimpo;
 }
 const cpf = new ValidaCPF('070.987.720-03');
+
+if (cpf.Valida()) {
+    console.log('CPF válido');
+} else {
+    console.log('CPF inválido');
+}
